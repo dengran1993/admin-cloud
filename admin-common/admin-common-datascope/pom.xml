@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>admin-common</artifactId>
+        <groupId>com.admin</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>admin-common-datascope</artifactId>
+
+    <description>
+        admin-common-datascope权限范围
+    </description>
+
+    <dependencies>
+
+        <!-- admin Common Security -->
+        <dependency>
+            <groupId>com.admin</groupId>
+            <artifactId>admin-common-security</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>

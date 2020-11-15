@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>admin-cloud</artifactId>
+        <groupId>com.admin</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>admin-common</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>admin-common-redis</module>
+        <module>admin-common-security</module>
+        <module>admin-common-swagger</module>
+        <module>admin-common-core</module>
+        <module>admin-common-log</module>
+        <module>admin-common-datascope</module>
+    </modules>
+
+
+</project>

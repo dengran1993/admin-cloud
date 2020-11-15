@@ -1,0 +1,39 @@
+# Tomcat
+server: 
+  port: 9200
+
+# Spring
+spring: 
+  application:
+    # 应用名称
+    name: admin-auth
+  profiles:
+    # 环境配置
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 192.168.43.214:8848
+      config:
+        # 配置中心地址
+        server-addr: 192.168.43.214:8848
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+        shared-dataids: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+#  redis:
+#    database: 0
+#    host: 192.168.43.214
+#    port: 6379
+#    password:
+#    timeout: 0
+#    jedis:
+#      pool:
+#        max-wait: -1
+#        max-idle: 0
+#        min-idle: 0
+
+ribbon:
+  ConnectTimeout: 5000000
+  ReadTimeout: 5000000
