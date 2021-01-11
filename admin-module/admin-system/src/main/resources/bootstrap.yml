@@ -3,7 +3,11 @@ server:
   port: 9201
 
 # Spring
-spring: 
+spring:
+  redis:
+    host: 192.168.43.214
+    port: 6379
+    password:
   application:
     # 应用名称
     name: admin-system
